@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ZNSO Engine/1.0.0": {
+        "runtime": {
+          "ZNSO Engine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZNSO Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

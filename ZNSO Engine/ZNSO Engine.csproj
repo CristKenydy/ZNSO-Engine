@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>ZNSO_Engine</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\ButtonImages\MainWindow\NewProjectButtonImage.png" />
+    <None Remove="Assets\ButtonImages\MainWindow\OpenProjectButtonImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\ButtonImages\MainWindow\NewProjectButtonImage - Hover.png" />
+    <Resource Include="Assets\ButtonImages\MainWindow\NewProjectButtonImage.png" />
+    <Resource Include="Assets\ButtonImages\MainWindow\OpenProjectButtonImage - Hover.png" />
+    <Resource Include="Assets\ButtonImages\MainWindow\OpenProjectButtonImage.png" />
+  </ItemGroup>
+
+</Project>
