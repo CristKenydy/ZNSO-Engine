@@ -21,6 +21,3 @@
 
 - 🔄 **MVVM-Based UI Architecture**  
   Clean separation of UI logic using modern MVVM patterns for maintainable editor development.
-
-## 📁 Project Structure
-
