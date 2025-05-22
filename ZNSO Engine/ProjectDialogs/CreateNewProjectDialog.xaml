@@ -1,12 +1,19 @@
-﻿<Window x:Class="ZNSO_Engine.ProjectDialogs.CreateNewProjectDialog"
+<Window x:Class="ZNSO_Engine.ProjectDialogs.CreateNewProjectDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZNSO_Engine.ProjectDialogs"
         mc:Ignorable="d"
-        Title="CreateNewProjectDialog" Height="450" Width="800">
+        Title="CreateNewProjectDialog" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF2830A0"/>
+            <GradientStop Color="#FF5060FF" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+
     </Grid>
 </Window>
