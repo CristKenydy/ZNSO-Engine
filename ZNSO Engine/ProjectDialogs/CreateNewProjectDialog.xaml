@@ -14,6 +14,120 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-
+        <Expander Header="Project properties" Foreground="#FF9BBF00" IsExpanded="True">
+            <Border Background="#FF000986">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <!-- Property panel: NAME -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Name: "
+              FontFamily="Consolas" FontWeight="Black" FontSize="20">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <TextBox Width="678" Margin="5,0,0,0"
+            Background="Black"
+            FontFamily="Consolas" FontWeight="Black" Height="20">
+                            <TextBox.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.Foreground>
+                        </TextBox>
+                    </StackPanel>
+                    <!-- Property panel: PATH -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <TextBlock Text="Path: "
+              FontFamily="Consolas" FontWeight="Black" FontSize="20">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FF9EC300"/>
+                                    <GradientStop Color="#FF4C5D00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <TextBox Height="20" Width="500"
+            Background="Black"/>
+                        <Button Width="180" Height="20" Margin="5,0,0,0" Content="Browse" Foreground="White">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="Black"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="DarkGray"/>
+                                            <Setter Property="Width" Value="180"/>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter Property="Background" Value="Gray"/>
+                                            <Setter Property="Width" Value="178"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" 
+                                            BorderBrush="{TemplateBinding BorderBrush}" 
+                                            BorderThickness="{TemplateBinding BorderThickness}" 
+                                            CornerRadius="5">
+                                        <ContentPresenter HorizontalAlignment="Center" 
+                                                          VerticalAlignment="Center" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+                    <!-- Property panel: TYPE -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <TextBlock Text="Type: "
+  FontFamily="Consolas" FontWeight="Black" FontSize="20">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <TextBox Width="678" Margin="5,0,0,0"
+Background="Black"
+FontFamily="Consolas" FontWeight="Black" Height="20">
+                            <TextBox.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.Foreground>
+                        </TextBox>
+                    </StackPanel>
+                    <!-- Property panel: DESCRIPTION -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                        <TextBlock Text="Descciption: "
+              FontFamily="Consolas" FontWeight="Black" FontSize="20">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                        <TextBox Width="600" Margin="5,0,0,0"
+            Background="Black"
+            FontFamily="Consolas" FontWeight="Black"
+            AcceptsReturn="True" TextWrapping="Wrap">
+                            <TextBox.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFB5E000"/>
+                                    <GradientStop Color="#FF4A5B00" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBox.Foreground>
+                        </TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Expander>
     </Grid>
 </Window>
